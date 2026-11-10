@@ -14,7 +14,7 @@ int main() {
 
     remainder = year % 4;
 
-    if (remainder == 0) {
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
         printf("год %d високосный\n", year);
     }
     else {
