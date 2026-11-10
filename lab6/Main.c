@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+п»ї#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
 
@@ -8,17 +8,17 @@ int main() {
     int year;
     int remainder;
 
-    printf("Введите год: ");
+    printf("Р’РІРµРґРёС‚Рµ РіРѕРґ: ");
 
     scanf("%d", &year);
 
     remainder = year % 4;
 
     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-        printf("год %d високосный\n", year);
+        printf("РіРѕРґ %d РІРёСЃРѕРєРѕСЃРЅС‹Р№\n", year);
     }
     else {
-        printf("год %d не високосный\n", year);
+        printf("РіРѕРґ %d РЅРµ РІРёСЃРѕРєРѕСЃРЅС‹Р№\n", year);
     }
 
     return 0;
